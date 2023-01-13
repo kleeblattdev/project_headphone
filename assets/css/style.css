@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-h2, h3, h4, p, a {
+h2, h3, h4, p, a, button {
   font-family: "Work Sans", sans-serif;
 }
 
@@ -175,5 +175,33 @@ nav {
 
 /* =================== Inspiration Style =================== */
 /* =================== Shop Style =================== */
+.shopSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopSection .sectionComposition {
+  background: no-repeat url(../img/section-composition4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50vw;
+  height: 100vh;
+}
+.shopSection .shopArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10vw;
+  text-align: center;
+}
+.shopSection .shopArticle #buyButton {
+  margin: 0 auto;
+  width: 100px;
+  padding: 20px;
+  background-color: rgb(234, 204, 194);
+  color: #2e2e2e;
+  border-style: none;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

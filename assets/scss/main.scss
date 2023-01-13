@@ -35,7 +35,7 @@ $fontWorkSans: 'Work Sans', sans-serif;
     box-sizing: border-box;
 }
 
-h2, h3, h4, p, a{
+h2, h3, h4, p, a, button{
     font-family: $fontWorkSans;
 }
 
@@ -195,5 +195,32 @@ div{
 /* =================== Inspiration Style =================== */
 
 /* =================== Shop Style =================== */
+
+.shopSection{
+    @include flex(flex, space-between, center);
+    .sectionComposition{
+        background: no-repeat url(../img/section-composition4.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50vw;
+        height: 100vh;
+    }
+    .shopArticle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10vw;
+        text-align: center;
+        #buyButton{
+            margin: 0 auto;
+            width: 100px;
+            padding: 20px;
+            background-color: $colorBeige;
+            color: $colorDarkgray;
+            border-style: none;
+            border-radius: 5px;
+        }
+    }
+}
 
 
