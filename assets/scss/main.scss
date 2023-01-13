@@ -3,7 +3,7 @@ $colorDarkgray:#2e2e2e;
 $colorLightgray:rgb(115, 115, 115);
 $colorBrown:#867772;
 $colorBeige:rgb(234, 204, 194);
-$colorLightBeige: #ebccc2;
+$colorDarkBeige: #ebccc2;
 $colorWhite:#fff;
 
 @font-face {
@@ -11,7 +11,20 @@ $colorWhite:#fff;
     src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
 
+
+
 $fontWorkSans: 'Work Sans', sans-serif;
+
+@mixin flex($display,$justContent,$alignItems){
+    display: $display;
+    justify-content: $justContent;
+    align-items: $alignItems;
+}
+
+@mixin fontSizeWght($fontSize, $fontWght){
+    font-size: $fontSize;
+    font-variation-settings: "wght" $fontWght;
+}
 
 /* =================== Global Style =================== */
 
@@ -25,14 +38,100 @@ h2, h3, h4, p, a{
     font-family: $fontWorkSans;
 }
 
+h2,h3,h4{
+    color: $colorBeige;
+}
+
+h2{
+    @include fontSizeWght(2.5rem, 100);
+}
+
+h3{
+    @include fontSizeWght(2.5rem, 300);
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        color: $colorWhite;
+        transition: 1s ease-in;
+    }
+}
+
+header, main, nav{
+    background-color: $colorDarkgray;
+}
+
+p, .navLink{
+    color: $colorLightgray;
+}
+
+p{
+    @include fontSizeWght(1.2rem, 400);
+    line-height: 1.8em;
+    margin-bottom: 10px;
+}
 
 /* =================== Header Style =================== */
 
+header{
+    @include flex(flex, space-between, center);
+    h1{
+        padding: 40px;
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;;
+    }
+    .socialLink{
+        color: $colorBrown;
+        margin-right: 60px;
+    }
+}
+
 /* =================== Side Navbar Style =================== */
+
+.navLink{
+    text-transform: uppercase;
+}
 
 /* =================== Main Style =================== */
 
 /* =================== About Style =================== */
+.aboutOpener{
+    @include flex(flex, center, center);
+    position: relative;
+    width: 90vw;
+    background: no-repeat url(../img/section-about-1.jpg) bottom;
+    background-size: contain;
+    margin: 0 auto;
+    padding: 70vh 0;
+
+    h2{
+        position: absolute;
+        top: 0;
+        width: 30vw;
+        line-height: 1.5em;
+    }
+}
+
+.aboutDesign{
+    @include flex(flex, space-between, center);
+    height: 80vh;
+    padding: 20vh 8vw;
+    div{ 
+        background: no-repeat url(../img/BS1_NYC_Home.webp);
+        background-size: cover;
+        padding: 250px;
+    }
+    article{
+        width: 40vw;
+        p{
+            margin-right: 55px;
+        }
+    }
+}
 
 /* =================== Lounger Style =================== */
 

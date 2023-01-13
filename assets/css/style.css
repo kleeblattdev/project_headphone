@@ -1,3 +1,121 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+/* =================== Global Style =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+h2, h3, h4, p, a {
+  font-family: "Work Sans", sans-serif;
+}
+
+h2, h3, h4 {
+  color: rgb(234, 204, 194);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 100;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-variation-settings: "wght" 300;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  transition: 1s ease-in;
+}
+
+header, main, nav {
+  background-color: #2e2e2e;
+}
+
+p, .navLink {
+  color: rgb(115, 115, 115);
+}
+
+p {
+  font-size: 1.2rem;
+  font-variation-settings: "wght" 400;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* =================== Header Style =================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  padding: 40px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .socialLink {
+  color: #867772;
+  margin-right: 60px;
+}
+
+/* =================== Side Navbar Style =================== */
+.navLink {
+  text-transform: uppercase;
+}
+
+/* =================== Main Style =================== */
+/* =================== About Style =================== */
+.aboutOpener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90vw;
+  background: no-repeat url(../img/section-about-1.jpg) bottom;
+  background-size: contain;
+  margin: 0 auto;
+  padding: 70vh 0;
+}
+.aboutOpener h2 {
+  position: absolute;
+  top: 0;
+  width: 30vw;
+  line-height: 1.5em;
+}
+
+.aboutDesign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  padding: 20vh 8vw;
+}
+.aboutDesign div {
+  background: no-repeat url(../img/BS1_NYC_Home.webp);
+  background-size: cover;
+  padding: 250px;
+}
+.aboutDesign article {
+  width: 40vw;
+}
+.aboutDesign article p {
+  margin-right: 55px;
+}
+
+/* =================== Lounger Style =================== */
+/* =================== Experience Style =================== */
+/* =================== Inspiration Style =================== */
+/* =================== Shop Style =================== */
 
 /*# sourceMappingURL=style.css.map */
