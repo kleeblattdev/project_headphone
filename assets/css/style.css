@@ -57,10 +57,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2vh 0 2vh 2vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(115, 115, 115, 0);
 }
 header h1 {
-  padding: 40px;
+  padding: 30px;
   background-image: url(../img/logo.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -70,6 +76,14 @@ header .socialLink {
 }
 
 /* =================== Side Navbar Style =================== */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 20px;
+  background: rgba(115, 115, 115, 0);
+}
+
 .navLink {
   text-transform: uppercase;
 }
@@ -89,7 +103,7 @@ header .socialLink {
 }
 .aboutOpener h2 {
   position: absolute;
-  top: 0;
+  top: 10%;
   width: 30vw;
   line-height: 1.5em;
 }
@@ -114,7 +128,51 @@ header .socialLink {
 }
 
 /* =================== Lounger Style =================== */
+.loungerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.loungerSection div {
+  width: 55vw;
+  height: 100%;
+  background: no-repeat url(../img/section-voyager.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.loungerSection .loungerArticle {
+  width: 40vw;
+  margin-right: 10vw;
+  margin-left: 5vw;
+}
+.loungerSection .loungerArticle h3 {
+  margin-bottom: 20vh;
+}
+
 /* =================== Experience Style =================== */
+.experienceSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.experienceSection div {
+  width: 55vw;
+  height: 100%;
+  background: no-repeat url(../img/section-experience-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.experienceSection .experienceSound {
+  width: 40vw;
+  margin-right: 10vw;
+  margin-left: 5vw;
+}
+.experienceSection .experienceSound h3 {
+  margin-bottom: 10vh;
+}
+
 /* =================== Inspiration Style =================== */
 /* =================== Shop Style =================== */
 
