@@ -12,8 +12,6 @@ $bgTransparent: rgba(115, 115, 115, 0);
     src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
 
-
-
 $fontWorkSans: 'Work Sans', sans-serif;
 
 @mixin flex($display,$justContent,$alignItems){
@@ -193,6 +191,39 @@ div{
 
 
 /* =================== Inspiration Style =================== */
+.inspiration{
+    padding: 10vh 20vw;
+    .inspirationVideo{
+        @include flex(flex, center , center);
+    }
+    .soundAlchemyArchi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imgOne textOne"
+        "textTwo imgTwo";
+        .alchemyImg{
+            background-image: url(../img/ETC_6.webp);
+            background-size: cover;
+            background-position: center;
+            grid-area: imgOne;
+        }
+        .alchemyText{
+            grid-area: textOne;
+        }
+        .archiImg{
+            background-image: url(../img/ETC_5.webp);
+            grid-area: imgTwo;
+        }
+        .archiText{
+            grid-area: textTwo;
+        }
+    }
+}
+
+
+
 
 /* =================== Shop Style =================== */
 

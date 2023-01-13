@@ -174,6 +174,37 @@ nav {
 }
 
 /* =================== Inspiration Style =================== */
+.inspiration {
+  padding: 10vh 20vw;
+}
+.inspiration .inspirationVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inspiration .soundAlchemyArchi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imgOne textOne" "textTwo imgTwo";
+}
+.inspiration .soundAlchemyArchi .alchemyImg {
+  background-image: url(../img/ETC_6.webp);
+  background-size: cover;
+  background-position: center;
+  grid-area: imgOne;
+}
+.inspiration .soundAlchemyArchi .alchemyText {
+  grid-area: textOne;
+}
+.inspiration .soundAlchemyArchi .archiImg {
+  background-image: url(../img/ETC_5.webp);
+  grid-area: imgTwo;
+}
+.inspiration .soundAlchemyArchi .archiText {
+  grid-area: textTwo;
+}
+
 /* =================== Shop Style =================== */
 .shopSection {
   display: flex;
