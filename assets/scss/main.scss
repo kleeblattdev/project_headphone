@@ -105,14 +105,19 @@ header{
 nav{
     position: fixed;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     left: 20px;
     background: $bgTransparent;
+    ul li {
+        list-style: none;
+        margin-bottom: 50px;
+        .navLink{
+            text-transform: uppercase;
+        }
+    }
 }
 
-.navLink{
-    text-transform: uppercase;
-}
+
 
 /* =================== Main Style =================== */
 
@@ -124,7 +129,7 @@ nav{
     background: no-repeat url(../img/section-about-1.jpg) bottom;
     background-size: contain;
     margin: 0 auto;
-    padding: 70vh 0;
+    padding: 85vh 0;
 
     h2{
         position: absolute;

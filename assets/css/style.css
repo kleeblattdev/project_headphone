@@ -85,12 +85,15 @@ header .socialLink {
 nav {
   position: fixed;
   z-index: 1;
-  top: 50%;
+  top: 40%;
   left: 20px;
   background: rgba(115, 115, 115, 0);
 }
-
-.navLink {
+nav ul li {
+  list-style: none;
+  margin-bottom: 50px;
+}
+nav ul li .navLink {
   text-transform: uppercase;
 }
 
@@ -105,7 +108,7 @@ nav {
   background: no-repeat url(../img/section-about-1.jpg) bottom;
   background-size: contain;
   margin: 0 auto;
-  padding: 70vh 0;
+  padding: 85vh 0;
 }
 .aboutOpener h2 {
   position: absolute;
