@@ -46,9 +46,14 @@ h2{
 }
 
 h3{
-    @include fontSizeWght(2.5rem, 300);
-    letter-spacing: 0.2em;
+    @include fontSizeWght(2.3rem, 400);
+    letter-spacing: 0.1em;
     margin-bottom: 20px;
+}
+
+h4{
+    @include fontSizeWght(1.4rem, 200);
+    margin-bottom: 10px;
 }
 
 a{
@@ -68,7 +73,7 @@ p, .navLink{
 }
 
 p{
-    @include fontSizeWght(1.2rem, 400);
+    @include fontSizeWght(1rem, 400);
     line-height: 1.8em;
     margin-bottom: 10px;
 }
@@ -196,6 +201,19 @@ div{
     .inspirationVideo{
         @include flex(flex, center , center);
     }
+
+.createText{
+    margin-bottom: 10vh;
+    .borderWord{
+        letter-spacing: 0.1em;
+        border: 1px solid $colorDarkBeige;
+        border-radius: 3px;
+        padding: 5px 15px;
+        margin: 5px;
+    }
+}
+
+
     .soundAlchemyArchi{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -211,13 +229,19 @@ div{
         }
         .alchemyText{
             grid-area: textOne;
+            padding: 50px 0;
+            margin-left: 15px;
         }
         .archiImg{
             background-image: url(../img/ETC_5.webp);
+            background-size: cover;
+            background-position: center;
             grid-area: imgTwo;
         }
         .archiText{
             grid-area: textTwo;
+            padding: 50px 0;
+            margin-left: 15px;
         }
     }
 }
